@@ -1,0 +1,78 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: clip;
+}
+#scrollbar {
+    height: 100%;
+    width: 5px;
+    background-color: black;
+    z-index: 5;
+    position: absolute;
+    left: 100%;
+    cursor: ew-resize;
+}
+#verbcontainer {
+    background-color: aqua;
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+#verbs {
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: gray;
+    grid-template-columns: 100%;
+}
+.verb {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: clip;
+}
+.VerbName {
+    font-size: 25px;
+}
+.VerbDefenition {
+    font-size: 15px;
+}
+
+#chart {
+    position: fixed;
+    display: grid;
+    width: 500px;
+    height: 600px;
+    left: 90%;
+    top: 50%;
+    translate: -100% -50%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.conjugatedVerb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    outline: 1px solid black;
+}
+.pronounLabel {
+    font-size: 25px;
+    align-self: baseline;
+}
+
+.conjugatedVerbLabel {
+    position: absolute;
+    z-index: 1;
+    font-size: 25px;
+}
+
+#vosotros > span{
+    opacity: 0;
+}
